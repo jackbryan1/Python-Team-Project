@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Home - Team Project</title>
+    <head>
+    <body>
+        <div><a href="/home">Home</a></div>
+        <div><a href="/spec1">Specification 1</a></div>
+        <div><a href="/spec2">Specification 2</a></div>
+        <div><a href="/spec3">Specification 3</a></div>
+        <div><a href="/spec4">Specification 4</a></div>
+        <h1>Home - Team Project</h1>
+        {% for line in lines %}
+            <div><p>{{ line.author }} wrote: <b>{{line.content}}</b></p></div>
+        {% endfor %}
+    </body>
+</html>

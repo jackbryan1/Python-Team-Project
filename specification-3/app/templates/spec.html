@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Specification {{spec}}</title>
+        <link rel="stylesheet" type="text/css" href="spec.css">
+    </head>
+    <body>
+        <h1>Specification {{spec}}</h1>
+        <div id="link_bar">
+            <a href="/home">Home</a>
+            <a href="/spec1">Specification 1</a>
+            <a href="/spec2">Specification 2</a>
+            <a href="/spec3">Specification 3</a>
+            <a href="/spec4">Specification 4</a>
+        </div>
+        <br>
+        <b>Overall, this spec does this.<br></b>
+        <hr>
+        {% for line in lines %}
+            {{line}}<br>
+        {% endfor %}
+    </body>
+</html>
