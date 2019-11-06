@@ -9,6 +9,6 @@ for i in os.listdir(pic):
     im = Image.open(pic + "/" + i)
     im.convert('RGB')
     im.thumbnail(thumb)
-    im.save(i + "_thumbnail" + ".JPEG")
+    im.save(file + "_thumbnail" + ".JPEG")
     im.close()
 
