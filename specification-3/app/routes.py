@@ -2,15 +2,31 @@ from app import app
 from flask import render_template
 
 @app.route('/')
-@app.route('/index')
-def index():
-    lines=[
-        {'author':'Oscar', 'content':'This is Team 27'},
-        {'author':'John', 'content':'This is Team 34'}
-    ]
-    return render_template('index.html', lines=lines)
+@app.route('/home')
+def home():
+    return render_template('home.html')
 
-@app.route('/other')
-def other():
-    return render_template('other.html')
+@app.route('/spec1')
+def spec1():
+    '''defining spec1, parsing data into html'''
+    f = open("./specification-1/README.md", 'r')
+    lines = (f.readlines())
+    return render_template('spec.html', lines=lines, spec=1)
 
+@app.route('/spec2')
+def spec2():
+    f = open("./specification-2/spec2.py", 'r')
+    lines = (f.readlines())
+    return render_template('spec.html', lines=lines, spec=2)
+
+@app.route('/spec3')
+def spec3():
+    f = open("./specification-3/README.md", 'r')
+    lines = (f.readlines())
+    return render_template('spec.html', lines=lines, spec=3)
+
+@app.route('/spec4')
+def spec4():
+    f = open("./specification-4/README.md", 'r')
+    lines = (f.readlines())
+    return render_template('spec.html', lines=lines, spec=4)
