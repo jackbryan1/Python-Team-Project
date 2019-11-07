@@ -15,8 +15,10 @@ def spec1():
 
 @app.route('/spec2')
 def spec2():
-    f = open("./specification-2/spec2.py", 'r')
-    lines = (f.readlines())
+    files = ["./specification-2/README.md", "./specification-2/spec2.py"]
+    f = open(files[0], 'r')
+    lines = []
+    lines.append(f.readlines())
     return render_template('spec.html', lines=lines, spec=2)
 
 @app.route('/spec3')
@@ -30,3 +32,7 @@ def spec4():
     f = open("./specification-4/README.md", 'r')
     lines = (f.readlines())
     return render_template('spec.html', lines=lines, spec=4)
+
+@app.route('/spec-css')
+def speccss():
+    return render_template('spec.css')
