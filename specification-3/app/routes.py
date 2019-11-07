@@ -9,8 +9,13 @@ def home():
 @app.route('/spec1')
 def spec1():
     '''defining spec1, parsing data into html'''
-    f = open("./specification-1/README.md", 'r')
-    lines = (f.readlines())
+    files = ["./specification-1/README.md"]
+    f = open(files[0], 'r')
+    lines = []
+    lines.append(f.readlines())
+    if len(files) == 2:
+        f = open(files[1], 'r')
+        lines.append(f.readlines())
     return render_template('spec.html', lines=lines, spec=1)
 
 @app.route('/spec2')
@@ -19,20 +24,29 @@ def spec2():
     f = open(files[0], 'r')
     lines = []
     lines.append(f.readlines())
+    if len(files) == 2:
+        f = open(files[1], 'r')
+        lines.append(f.readlines())
     return render_template('spec.html', lines=lines, spec=2)
 
 @app.route('/spec3')
 def spec3():
-    f = open("./specification-3/README.md", 'r')
-    lines = (f.readlines())
+    files = ["./specification-3/README.md"]
+    f = open(files[0], 'r')
+    lines = []
+    lines.append(f.readlines())
+    if len(files) == 2:
+        f = open(files[1], 'r')
+        lines.append(f.readlines())
     return render_template('spec.html', lines=lines, spec=3)
 
 @app.route('/spec4')
 def spec4():
-    f = open("./specification-4/README.md", 'r')
-    lines = (f.readlines())
+    files = ["./specification-4/README.md"]
+    f = open(files[0], 'r')
+    lines = []
+    lines.append(f.readlines())
+    if len(files) == 2:
+        f = open(files[1], 'r')
+        lines.append(f.readlines())
     return render_template('spec.html', lines=lines, spec=4)
-
-@app.route('/spec-css')
-def speccss():
-    return render_template('spec.css')
