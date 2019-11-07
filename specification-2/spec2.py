@@ -39,6 +39,14 @@ def smoothen():
         im.save(file + "_smooth" + ".JPEG")
         im.close()
 
+def apply_bw():
+    for i in os.listdir(pic):
+        file, ext = os.path.splitext(i)
+        im = Image.open(pic + "/" + i)
+        im = im.convert('L')
+        im.save(file + "_test" + ".JPEG")
+        im.close()
+
 ask_user = input("What would you like to do?")
 
 if ask_user == "thumbnail":
@@ -56,6 +64,10 @@ elif ask_user == "contour":
 elif ask_user == "smooth":
     print("Smoothening...")
     smoothen()
+
+elif ask_user == "bw":
+    print("Applying black and white filter...")
+    apply_bw()
 
 else:
     print("Invalid command")
