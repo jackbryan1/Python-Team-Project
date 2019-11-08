@@ -9,7 +9,7 @@ def home():
 
 @app.route('/spec1')
 def spec1():
-    files = glob.glob("./specification-1/*/*/*.html") + glob.glob("./specification-1/*/*.py") + glob.glob(
+    files = glob.glob("./specification-1/*/*/*.py") + glob.glob("./specification-1/*/*.py") + glob.glob(
         "./specification-1/*.py")
     length = len(files)
     lines = []
@@ -20,7 +20,7 @@ def spec1():
 
 @app.route('/spec2')
 def spec2():
-    files = glob.glob("./specification-2/*/*/*.html") + glob.glob("./specification-2/*/*.py") + glob.glob(
+    files = glob.glob("./specification-2/*/*/*.py") + glob.glob("./specification-2/*/*.py") + glob.glob(
         "./specification-2/*.py")
     length = len(files)
     lines = []
@@ -42,7 +42,7 @@ def spec3():
 
 @app.route('/spec4')
 def spec4():
-    files = glob.glob("./specification-4/*/*/*.html") + glob.glob("./specification-4/*/*.py") + glob.glob(
+    files = glob.glob("./specification-4/*/*/*.py") + glob.glob("./specification-4/*/*.py") + glob.glob(
         "./specification-4/*.py")
 
     length = len(files)
