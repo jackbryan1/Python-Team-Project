@@ -47,17 +47,20 @@
             <a href="/spec2">Specification 2</a>
             <a href="/spec3">Specification 3</a>
             <a href="/spec4">Specification 4</a>
-
         </div>
         </div>
         </div>
         <br>
+    <b>spec-info</b><br>
         <b>Code for this Specification:<br></b>
         <hr>
         <br>
-        {% for line in lines %}
-            {{line}}
-            <br><br>
-        {% endfor %}
+        {%for line in lines%}
+            <b>NEW FILE</b><br>
+            {%for specific_line in line%}
+                {{specific_line}}
+                <br><br>
+            {%endfor%}
+        {%endfor%}
     </body>
 </html>
