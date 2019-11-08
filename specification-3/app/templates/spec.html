@@ -51,7 +51,10 @@
         </div>
         </div>
         <br><hr>
-        <b>spec-info</b><br>
+        {%for line in spec_info%}
+            <b>{{line}}</b><br>
+        {%endfor%}
+        <hr>
         <b>Code for this Specification:<br></b>
         <hr>
         <br>
