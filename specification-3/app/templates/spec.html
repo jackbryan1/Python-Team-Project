@@ -55,19 +55,21 @@
         </div>
         </div>
         <br><hr>
+        <b>Information About Specification</b><br><br>
         {%for line in spec_info%}
-            <b>{{line}}</b><br>
+            {{line}}<br>
         {%endfor%}
         <hr>
-        A list of files in specification {{spec}}: <br>
-        {{files}}
+        <b>A list of files in specification {{spec}}: </b><br><br>
+        {%for line in  files%}
+            {{line}}<br>
+        {%endfor%}}
         <hr>
         <b>Code for this Specification:<br></b>
-        <hr>
         <br>
-        {%for line in lines%}
+        {%for file in lines%}
         <p1><b>NEW FILE</b><br></p1>
-            {%for specific_line in line%}
+            {%for specific_line in file%}
                 {{specific_line}}
                 <br><br>
             {%endfor%}

@@ -21,8 +21,7 @@ directory found by my program (using glob module)
 Below this, is the code for the specification. It is written in simple text
 to ensure that the code is readable. Above each file, is the red text 'NEW FILE'. 
 This is to signify that the code below it is in a new file, and is separated from the code above.
-File names could be here, but this is not necessary to fulfill the specification
-and can be added in future iterations.
+
 
 What the code does
 -----
