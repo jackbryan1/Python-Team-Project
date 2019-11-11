@@ -1,4 +1,25 @@
-file to include: a brief description explaining what the code does and how it
-  meets the objective of the specification.
-  
-  THIS IS FOR SPEC 3 DO NOT REMOVE, ADD INFO
+Specification 2
+====================
+
+This package allows creating thumbnails with 512x512 sizes and applies the filters: emboss, contour, smooth, black and white.
+
+## Installation
+
+The [Pillow](https://pillow.readthedocs.io/en/stable/) package is used in this project
+
+## Usage
+
+```thumbnail```
+creates thumbnails of pictures in "spec2-images" folder
+
+```emboss```
+applies the emboss filter on pictures in "spec2-images" folder
+
+```contour```
+applies the contour filter on pictures in "spec2-images" folder
+
+```smooth```
+applies the smooth filter on pictures in "spec2-images" folder
+
+```bw```
+creates black and white versions of pictures in "spec2-images" folder
