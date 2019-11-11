@@ -10,7 +10,7 @@ How to Use
 -------
 Firstly, due to the infancy and development of this project, the 'flask run' command
 must be called in the terminal. This runs the Python Module flask, and therefore navigating to
-the localhost, port 5000 will run this python program. (http://localhost:5000/)
+the localhost, port 5000 will display this python program. (http://localhost:5000/)
 
 The HTML form has a drop-down menu that allows you to pick which specification
 you would like to see. At the top, specification information will be shown. 
