@@ -20,7 +20,7 @@ def spec1():
     for i in range(length):
         f = open(files[i], 'r')
         lines.append(f.readlines())
-    return render_template('spec.html', lines=lines, spec_info=spec_info, spec=1)
+    return render_template('spec.html', lines=lines, spec_info=spec_info, spec=1, files=files)
 
 @app.route('/spec2')
 def spec2():
@@ -34,7 +34,7 @@ def spec2():
     for i in range(length):
         f = open(files[i], 'r')
         lines.append(f.readlines())
-    return render_template('spec.html', spec_info=spec_info, lines=lines, spec=2)
+    return render_template('spec.html', spec_info=spec_info, lines=lines, spec=2, files=files)
 
 @app.route('/spec3')
 def spec3():
@@ -48,7 +48,7 @@ def spec3():
     for i in range(length):
         f = open(files[i], 'r')
         lines.append(f.readlines())
-    return render_template('spec.html', lines=lines, spec_info=spec_info, spec=3)
+    return render_template('spec.html', lines=lines, spec_info=spec_info, spec=3, files=files)
 
 @app.route('/spec4')
 def spec4():
@@ -62,4 +62,4 @@ def spec4():
     for i in range(length):
         f = open(files[i], 'r')
         lines.append(f.readlines())
-    return render_template('spec.html', lines=lines, spec_info=spec_info, spec=4)
+    return render_template('spec.html', lines=lines, spec_info=spec_info, spec=4, files=files)

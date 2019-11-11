@@ -39,10 +39,9 @@
                 color: red;
             }
 
-
-
         </style>
     </head>
+    <body>
         <div class="dropdown">
             <button class="dropbtn">Specification {{spec}}</button>
             <div class="dropdown-content">
@@ -59,6 +58,9 @@
         {%for line in spec_info%}
             <b>{{line}}</b><br>
         {%endfor%}
+        <hr>
+        A list of files in specification {{spec}}: <br>
+        {{files}}
         <hr>
         <b>Code for this Specification:<br></b>
         <hr>
