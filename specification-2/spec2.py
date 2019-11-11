@@ -85,3 +85,25 @@ elif ask_user == "bw":
 
 else:
     print("Invalid command")
+
+# Strings for yes or no commands
+yes = {'yes', 'y', 'ye', ''}
+no = {'no', 'n'}
+
+# Path to newly created images
+newpic = "../specification-2"
+
+choice = input("Would you like to see the created images?").lower()
+
+if choice in yes:
+    print("Opening pictures...")
+    for j in os.listdir(newpic):
+        newim = Image.open(newpic + "/" + j)
+        newim.show()
+        newim.close
+
+elif choice in no:
+    print("Closing program.")
+
+else:
+    print("Please respond with 'yes' or 'no'")
