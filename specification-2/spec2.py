@@ -2,11 +2,15 @@ import os
 from PIL import Image
 from PIL import ImageFilter
 
-
+# Path to folder with pictures
 pic = "../resources/img/spec2-images"
+
+# Thumbnail size
 thumb = (512, 512)
 
+
 def create_thumbnail():
+    """Creates thumbnails of all pictures in pic path."""
     for i in os.listdir(pic):
         file, ext = os.path.splitext(i)
         im = Image.open(pic + "/" + i)
@@ -15,7 +19,9 @@ def create_thumbnail():
         im.save(file + "_thumbnail" + ".JPEG")
         im.close()
 
+
 def apply_emboss():
+    """Applies the emboss filter to all pictures in pic path."""
     for i in os.listdir(pic):
         file, ext = os.path.splitext(i)
         im = Image.open(pic + "/" + i)
@@ -23,7 +29,9 @@ def apply_emboss():
         im.save(file + "_emboss" + ".JPEG")
         im.close()
 
+
 def apply_contour():
+    """Applies the contour filter to all pictures in pic path."""
     for i in os.listdir(pic):
         file, ext = os.path.splitext(i)
         im = Image.open(pic + "/" + i)
@@ -31,7 +39,9 @@ def apply_contour():
         im.save(file + "_contour" + ".JPEG")
         im.close()
 
+
 def smoothen():
+    """Smoothens all pictures in pic path."""
     for i in os.listdir(pic):
         file, ext = os.path.splitext(i)
         im = Image.open(pic + "/" + i)
@@ -39,7 +49,9 @@ def smoothen():
         im.save(file + "_smooth" + ".JPEG")
         im.close()
 
+
 def apply_bw():
+    """Changes the RGB values to black and white for all pictures in pic path."""
     for i in os.listdir(pic):
         file, ext = os.path.splitext(i)
         im = Image.open(pic + "/" + i)
@@ -47,6 +59,8 @@ def apply_bw():
         im.save(file + "_test" + ".JPEG")
         im.close()
 
+
+# Input acts like a command line
 ask_user = input("What would you like to do?")
 
 if ask_user == "thumbnail":
