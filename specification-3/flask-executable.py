@@ -1,1 +1,1 @@
-from app import app #executable file
+from app import app #executable
