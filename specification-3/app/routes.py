@@ -5,13 +5,15 @@ import glob
 @app.route('/')
 @app.route('/home')
 def home():
+    '''render home web-page'''
     return render_template('home.html')
 
 @app.route('/spec1')
 def spec1():
+    '''render specification 1, parse in code, information and specification number'''
     files = glob.glob("./specification-1/*/*/*.py") + glob.glob("./specification-1/*/*.py") + glob.glob(
         "./specification-1/*.py")
-    f = open("specification-1/spec1-info.md")
+    f = open("specification-1/README.md")
     spec_info = f.readlines()
     length = len(files)
     lines = []
@@ -22,9 +24,10 @@ def spec1():
 
 @app.route('/spec2')
 def spec2():
+    '''render specification 2, parse in code, information and specification number'''
     files = glob.glob("./specification-2/*/*/*.py") + glob.glob("./specification-2/*/*.py") + glob.glob(
         "./specification-2/*.py")
-    f = open("specification-2/spec2-info.md")
+    f = open("specification-2/README.md")
     spec_info = f.readlines()
     length = len(files)
     lines = []
@@ -35,9 +38,10 @@ def spec2():
 
 @app.route('/spec3')
 def spec3():
+    '''render specification 3, parse in code, information and specification number'''
     files = glob.glob("./specification-3/*/*/*.html") + glob.glob("./specification-3/*/*.py") + glob.glob(
         "./specification-3/*.py")
-    f = open("specification-3/spec3-info.md")
+    f = open("specification-3/README.md")
     spec_info = f.readlines()
     length = len(files)
     lines = []
@@ -48,9 +52,10 @@ def spec3():
 
 @app.route('/spec4')
 def spec4():
+    '''render specification 4, parse in code, information and specification number'''
     files = glob.glob("./specification-4/*/*/*.py") + glob.glob("./specification-4/*/*.py") + glob.glob(
         "./specification-4/*.py")
-    f = open("specification-4/spec4-info.md")
+    f = open("specification-4/README.md")
     spec_info = f.readlines()
     length = len(files)
     lines = []
