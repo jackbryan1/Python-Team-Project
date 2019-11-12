@@ -9,7 +9,8 @@ verify_ssl = true
 flask = "*"
 matplotlib = "*"
 pillow = "*"
-flaskenv = "*"
+#flaskenv = "*"
+bcrypt = "*"
 
 [requires]
 python_version = "3.7"
