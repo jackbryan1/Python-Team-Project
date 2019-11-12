@@ -1,6 +1,7 @@
 import argparse
 from hash import hashing
 
+
 def cli():
     parser = argparse.ArgumentParser(prog="test")
     parser.add_argument('username')
