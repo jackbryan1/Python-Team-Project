@@ -4,6 +4,30 @@ TEAM PROJECT (PRACTICAL 3) TEAM 27
 Specification 1
 =====
 
+According to the chart letter E, T, A is the letter that appears most frequently in book.txt.
+
+These are the most frequently occurring words in book.txt
+
+Word   | Frequency 
+----  | ----  
+The|14602
+Of|6711
+And|6449
+a|4697
+To|4659
+In|4212
+That|2955
+His|2522
+It|2382
+i|1943
+
+
+
+Run **'python3 main.py'**  in the terminal to run this program. Make 
+sure that **book.txt** and **main.py** are in the same directory before running.
+If you want to change the name of the output file or the number 
+of output words, modify the code in line **76** of **main.py**.
+
 Specification 2
 =====
 
@@ -75,3 +99,30 @@ This is to signify that the code below it is in a new file, and is separated fro
 
 Specification 4
 =====
+
+Specification 4
+=====
+About
+-----
+
+Specification 4 is a unique specification in that there isnt a particular python library to use, so there is complete creative freedom 
+
+How to Use
+-------
+
+example command:
+
+pipenv run python specification-4\start.py test test hash
+
+can also write compare instead of hash \
+anything can be written in place of either test
+
+What the code does
+-----
+
+The code allows the user to type in a password and have it encrypted and stored. The user can then type in a password to check it against the stored passwords.
+
+How this solution meets the specification
+-----
+
+We researched different python libraries and chose Bcrypt to use. We checked that this is not similar to any existing specifications, and then we started working on the code. 
