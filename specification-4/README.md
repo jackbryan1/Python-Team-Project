@@ -1,47 +1,26 @@
-### Specification 4
+Specification 4
+=====
+About
+-----
 
-In this challenge it is up to you to choose a Python library that
-hasn't been mentioned before in the previous challenges and develop a
-software artefact around that library. The software artefact should
-make use of some of the skills you have learned so far in CSC1031,
-CSC1032, CSC1033, and CSC1034 so that it clearly displays your
-programming and theoretical abilities.
+Specification 4 is a unique specification in that there isnt a particular python library to use, so there is complete creative freedom 
 
-This challenge has complete creative freedom. Meaning, you can build
-anything you like as long as it doesn't make use of an aforementioned
-library in the previous challenges.
+How to Use
+-------
 
-#### Objectives
+example command:
 
-* Investigate Python libraries to focus your solution around.
-* Plan your solution before development.
-* Develop your program solution.
-* Test your program.
+pipenv run python specification-4\start.py test test hash
 
-#### Learning Outcomes
+can also write compare instead of hash \
+anything can be written in place of either test
 
-* To be able to investigate a library's documentation page to produce
-  code that satisfies the objective.
-* To be able to refine your investigation and avoid obfuscation.
-* To be able to produce a program that isn't centred around a problem
-  specification, allowing you to be creative with your solution.
-* To be able to manage your time effectively by clearly planning the
-  project before development.
+What the code does
+-----
 
-#### Concepts to consider
+The code allows the user to type in a password and have it encrypted and stored. The user can then type in a password to check it against the stored passwords.
 
-* Everything in CSC1031, CSC1032, CSC1033, CSC1034
+How this solution meets the specification
+-----
 
-#### Libraries to investigate
-
-Here are some links to pages that rate the top used Python libraries;
-be aware that not all libraries might be suitable due to density
-and/or technical limitations.
-
-* Links: 
-  * [20 Python libraries you can’t live
-  without](https://pythontips.com/2013/07/30/20-python-libraries-you-cant-live-without/)
-  * [17 Best Python
-  Libraries](https://medium.com/issuehunt/17-best-python-libraries-f555546ed4e9)
-  * [Top 10 Python Libraries You Must Know In
-  2019](https://www.edureka.co/blog/python-libraries/)
+We researched different python libraries and chose Bcrypt to use. We checked that this is not similar to any existing specifications, and then we started working on the code. 

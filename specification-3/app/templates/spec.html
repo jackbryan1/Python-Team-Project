@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Specification {{spec}}</title>
+        <style>
+
+            .dropbtn {
+                background-color: darkgrey;
+                color: white;
+                padding: 10px;
+                font-size: 20px;
+                border: none;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: lightgrey;
+                min-width: 200px;
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {background-color: white;}
+            .dropdown:hover .dropdown-content {display: block;}
+            .dropdown:hover .dropbtn {background-color: grey;}
+
+            p1 {
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+            <button class="dropbtn">Specification {{spec}}</button>
+            <div class="dropdown-content">
+
+            <a href="/home">Home</a>
+            <a href="/spec1">Specification 1</a>
+            <a href="/spec2">Specification 2</a>
+            <a href="/spec3">Specification 3</a>
+            <a href="/spec4">Specification 4</a>
+        </div>
+        </div>
+        </div>
+        <br><hr>
+        <b>Information About Specification</b><br><br>
+        {%for line in spec_info%}
+            {{line}}<br>
+        {%endfor%}
+        <hr>
+        <b>A list of files in specification {{spec}}, in same order shown in the code below: </b><br><br>
+        {%for line in  files%}
+            {{line}}<br>
+        {%endfor%}
+        <hr>
+        <b>Code for this Specification (# and ''' denote notations on the code):</b><br><br>
+        {%for file in lines%}
+        <p1><b>NEW FILE</b><br></p1>
+            {%for specific_line in file%}
+                {{specific_line}}
+                <br><br>
+            {%endfor%}
+        {%endfor%}
+    </body>
+</html>

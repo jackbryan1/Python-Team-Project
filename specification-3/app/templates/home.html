@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Home - Team Project</title>
+        <style>
+
+            .dropbtn {
+                background-color: darkgrey;
+                color: white;
+                padding: 10px;
+                font-size: 20px;
+                border: none;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: lightgrey;
+                min-width: 200px;
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {background-color: white;}
+            .dropdown:hover .dropdown-content {display: block;}
+            .dropdown:hover .dropbtn {background-color: grey;}
+
+        </style>
+    </head>
+
+        <div class="dropdown">
+        <button class="dropbtn">Home</button>
+        <div class="dropdown-content">
+
+        <a href="/home">Home</a>
+        <a href="/spec1">Specification 1</a>
+        <a href="/spec2">Specification 2</a>
+        <a href="/spec3">Specification 3</a>
+        <a href="/spec4">Specification 4</a>
+
+        </div>
+        </div>
+        <hr>
+        <p>Welcome Home! Use the drop down menu to pick a Specification to see the code.</p>
+    </body>
+</html>

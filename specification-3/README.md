@@ -1,50 +1,77 @@
-### Specification 3
+Specification 3
+=====
+Specification 3 is all about showing the team's code in a nice, clean format.
+Using Flask, I have created a generalised program that will take all files
+created in each specification's directory, and show these on a HTML form.
 
-In this challenge you are going to build a web application using a
-Python-based web framework. Flask is a common web framework that is
-easy to setup and allows extensibility.
+Installation
+-----
+The Flask Package is used in this project, as is Flaskenv.
 
-You are going to build a simple web application that presents the code
-written in the previous challenge specifications. The purpose of the
-webpages is to present the code neatly with some brief documentation
-explaining the purpose of the code. What you do here is entirely
-experimental and open for creativity, therefore you can make use of
-any external libraries for the presentation of your code. However, be
-sure not to 'feature creep'.
+Usage
+-------
+```flaskenv``` must be installed onto the virtual environment. This is done
+through the command ```pip install python-dotenv```. This gives python the capability
+to read the .flaskenv file included in this repository. Alternatively, the command
+```set  FLASK_APP=specification-3/flask-executable.py``` can be run. Both of these methods 
+tell the flask module where to look for the executable file. 
 
-This challenge is about your ability to investigate a Python web
-framework library and its applications rather than your HTML, CSS, and
-JavaScript abilities. I suggest looking through my guide on creating a
-simple web application that uses HTML templates.
+The ```flask run``` command must be called in the terminal. This runs the Python Module flask, and therefore 
+navigating to the localhost, port 5000 will display this python program. ```http://localhost:5000/```
 
-Do **not** host your web application on a public server.
+The HTML form has a drop-down menu that allows you to pick which specification
+you would like to see. 
 
-#### Objectives
+At the top, specification information will be shown. 
+This information outlines a brief description, explaining what the code does and how it
+meets the objective of the specification. 
 
-* Install the Python web-framework Flask.
-* Produce a simple home page that links/routes to other pages that
-  display your code.
-* Produce a web page for each of the other specifications and present
-  your code on them.
-* Produce a brief description explaining what the code does and how it
-  meets the objective of the specification.
+Next, a list of all files in each specification's
+directory found by my program (using glob module).
 
-#### Learning Outcomes
+Below this is the code for the specification. It is written in simple text
+to ensure that the code is readable. Above each file, is the red text 'NEW FILE'. 
+This is to signify that the code below it is in a new file, and is separated from the code above.
 
-* To be able to investigate a library's documentation page to produce
-  code that satisfies an objective.
-* To understand the application of Python in web-based development and
-  deployment.
-* To understand how Python can be used to create fast and simple web
-  applications.
+What the code does
+-----
+Firstly, due to the infancy and development of the project, the 'flask run' command
+must be called in the terminal. This runs the Python Module flask, and therefore navigating to
+the localhost, port 5000 will run this python program. (http://localhost:5000/)
 
-#### Concepts to consider
+The HTML form has a drop-down menu that allows you to pick which specification
+you would like to see. At the top, specification information will be shown. 
+This information outlines a brief description explaining what the code does and how it
+meets the objective of the specification.
+
+Below this, is the code for the specification. It is written in simple text
+to ensure that the code is readable. Above each file, is the text 'NEW FILE'. 
+This is to signify that the code below it is in a new file, and is seperated from the code above.
+File names could be here, but this is not necessary to fulfill the specification
+and can be added in future iterations.
+
+How this solution meets the specification
+-----
+This solution sufficiently meets the specification. This can be proven 
+by going through each part of the specification, and comparing my solution.
 
 * String manipulation
+
+    The code that was written for other specifications were read with '\n' for new lines. This needed to be manipulated, 
+ which I managed to successfully remove using a for statement. 
+
 * File IO
+    
+    Using the open() method in python completed this objective - It allowed for the reading of files (and writing if
+    desired, but not in this specification).
+
 * Templating of HTML files
+
+    I used HTML tags to showcase my code in a clear manner. The solution uses HTML tags, Cascading Style Sheets (CSS)
+    elements and Javascript elements to fulfill the specification brief.
+
 * Passing of arguments
 
-#### Libraries to investigate
+    Arguments such as the lines of code, the spec number and specification information (such as this) was using 
+    argument passing.
 
-* [Flask](https://www.fullstackpython.com/flask.html)
