@@ -60,13 +60,12 @@
             {{line}}<br>
         {%endfor%}
         <hr>
-        <b>A list of files in specification {{spec}}: </b><br><br>
+        <b>A list of files in specification {{spec}}, in same order shown in the code below: </b><br><br>
         {%for line in  files%}
             {{line}}<br>
-        {%endfor%}}
+        {%endfor%}
         <hr>
-        <b>Code for this Specification:<br></b>
-        <br>
+        <b>Code for this Specification (# and ''' denote notations on the code):</b><br><br>
         {%for file in lines%}
         <p1><b>NEW FILE</b><br></p1>
             {%for specific_line in file%}
