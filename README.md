@@ -49,6 +49,12 @@ The Flask Package is used in this project, as is Flaskenv.
 
 Usage
 -------
+```flaskenv``` must be installed onto the virtual environment. This is done
+through the command ```pip install python-dotenv```. This gives python the capability
+to read the .flaskenv file included in this repository. Alternatively, the command
+```set  FLASK_APP=specification-3/flask-executable.py``` can be run. Both of these methods 
+tell the flask module where to look for the executable file. 
+
 The ```flask run``` command must be called in the terminal. This runs the Python Module flask, and therefore 
 navigating to the localhost, port 5000 will display this python program. ```http://localhost:5000/```
 
